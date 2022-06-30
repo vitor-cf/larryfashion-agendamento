@@ -6,6 +6,6 @@ const enviarFormulario =() => {
         let numero= 5571982246892;
         
         
-var win= window.open(`https://wa.me/${numero}?text=LarryFashion %0A%0A------------------------ %0A%0ACliente:%20${nome} %0A%0ATelefone:%20${tel}%0A%0A------------------------ %0A%0AServiço:%20${service}`,'_blank');       
+var win= window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ %0A%0ACliente:%20${nome} %0A%0ATelefone:%20${tel}%0A%0A------------------------ %0A%0AServiço:%20${service}`,'_blank');       
 }
 evento.addEventListener('click', enviarFormulario)

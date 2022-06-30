@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LarryFashion - Agendamento</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- LOGO -->
@@ -15,27 +18,31 @@
     
     <!-- Formulário Agendamento --> 
     <fieldset>
-        <div class="container-input"> 
-            <div class="box-cliente">
-                <label>Cliente</label>
-                <input type="text" placeholder="Digite seu nome" id="nome"> 
-            </div>
-            <div class="box-telefone">
-                <label>Telefone</label>
-                <input type="tel" placeholder="Digite seu telefone" id="tel">
-            </div>
-            <div class="box-services">
-                <label>Serviços</label> 
-                <select name="service" id="service">
-                    <option value="Mão">Mão</option>
-                    <option value="Pé">Pé</option>
-                    <option value="Mão e Pé">Mão e pé</option>
-                </select>
+        <div class="border">
+            <div class="container-input"> 
+            
+                <div class="box-cliente">
+                    <label>Cliente</label>
+                    <input type="text" placeholder="Digite seu nome" id="nome" required> 
+                </div>
+                <div class="box-telefone">
+                    <label>Contato</label>
+                    <input type="tel" placeholder="Digite seu telefone" id="tel">
+                </div>
+                <div class="box-services">
+                    <label>Serviços</label> 
+                    <select name="service" id="service" required>
+                        <option value="Mão">Mão</option>
+                        <option value="Pé">Pé</option>
+                        <option value="Mão e Pé">Mão e pé</option>
+                    </select>
+                </div> 
+                
             </div> 
-            <span>Valor:</span>
-        </div> 
-
-        <button id="send">Enviar</button>
+    
+            
+        </div>
+        <button id="send">Enviar</button>  
     </fieldset> 
     <script src="script.js"></script>
 </body>
