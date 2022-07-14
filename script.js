@@ -6,7 +6,7 @@ function forms() {
         let tel = document.getElementById('tel').value;
         let service = document.getElementById('service').value; 
         let msg = document.getElementById('msg');
-        let numero = 5571986894235; 
+        let numero = 5571991182502; 
         let valor1 = 'R$ 20,00';
         let valor2 = 'R$ 25,00';
         let valor3 = 'R$ 30,00';
