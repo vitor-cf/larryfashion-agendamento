@@ -12,12 +12,14 @@ function forms() {
         let valor3 = 'R$ 30,00';
         
 
-        if (service === 'Mão') {
-                 
+        if (service === 'Mão') { 
+                
                 var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
         %0A%0ACliente:%20${nome} %0A%0ATelefone:%20${tel}%0A%0A------------------------ 
         %0A%0AServiço:%20${service}%0A%0A------------------------ %0A%0A*Valor*: ${valor1}`,'_blank');
         }  
+                 
+
 
         if (service === 'Pé') {
                  
