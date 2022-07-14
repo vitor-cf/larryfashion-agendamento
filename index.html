@@ -23,15 +23,23 @@
             <div class="container-input"> 
             
                 <div class="box-cliente">
-                    <label>Cliente</label>
+                    <label>Cliente:</label>
                     <input type="text" placeholder="Digite seu nome" id="nome" required> 
                 </div>
                 <div class="box-telefone">
-                    <label>Contato</label>
+                    <label>Contato:</label>
                     <input type="tel" placeholder="(XX) XXXXX-XXXX" id="tel">
+                </div> 
+                <div class="box-func">
+                    <label>Funcionária(a):</label> 
+                    <select name="func" id="func" required>
+                        <option value="bruna" class="bruna">Bruna</option>
                 </div>
+                
+                        
+                    </select> 
                 <div class="box-services">
-                    <label>Serviços</label> 
+                    <label>Serviços:</label> 
                     <select name="service" id="service" required>
                         <option value="Selecione" class="selec">Selecione</option>
                         <option value="Mão">Mão</option>
@@ -51,7 +59,11 @@
        
 
         
-    </fieldset>  
+    </fieldset>   
+
+    <!-- Tabela de preços -->
+
+
     <div class="box-msg">
         <p id="msg"></p>
     </div>

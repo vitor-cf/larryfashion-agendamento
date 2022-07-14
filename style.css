@@ -28,8 +28,7 @@ body {
     margin-top: 5vh; 
     border-radius: 10px;
 } 
-    
-    
+  
 label { 
     color: rgb(92, 92, 92);
     font-weight: 600;
@@ -75,6 +74,7 @@ button:hover {
         
     } 
     .container-input {
+        
         height: 40vh;
     }
     input {
