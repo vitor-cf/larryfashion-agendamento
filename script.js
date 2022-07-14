@@ -41,7 +41,9 @@ function forms() {
                 document.getElementById('d-msg').style.display ='block';
                 msg.innerHTML = `Selecione um serviço !`; 
                 
-        }
+        } 
+
+        
                 
 
         
