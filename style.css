@@ -71,7 +71,11 @@ button:hover {
 
 @media only screen and (max-width: 472px) {
     .container-logo {
-        margin-bottom: 10px;
+        margin-bottom: 10px; 
+        
+    } 
+    .container-input {
+        height: 40vh;
     }
     input {
         margin-top: 10px; 
