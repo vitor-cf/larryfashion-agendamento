@@ -65,13 +65,26 @@ button:hover {
 .selec {
     color: grey;
 } 
-.box-msg { 
-    color: red;
+.box-msg {  
+    padding: 50px;
+    top: 27vh;
+    left: 7.5vh;
+    bottom: 60vh;
+    position: absolute;
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    width: 50%;
+    height: 5vh;
+    color: rgb(0, 0, 0);
     font-weight: 600;
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-} 
+    display: none;
+    text-align: center;
+}  
+  
+
+   
+    
 
 @media only screen and (max-width: 472px) {
     .container-logo {
