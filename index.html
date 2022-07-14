@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LarryFashion - Agendamento</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
 <body>
     <!-- LOGO -->
     <div class="container-logo">
-        <h1>LARRYFASHION</h1>
+        <h1 class="logo">LARRY FASHION</h1>
     </div> 
     
     <!-- Formulário Agendamento --> 
@@ -27,23 +28,34 @@
                 </div>
                 <div class="box-telefone">
                     <label>Contato</label>
-                    <input type="tel" placeholder="Digite seu telefone" id="tel">
+                    <input type="tel" placeholder="(XX) XXXXX-XXXX" id="tel">
                 </div>
                 <div class="box-services">
                     <label>Serviços</label> 
                     <select name="service" id="service" required>
+                        <option value="Selecione" class="selec">Selecione</option>
                         <option value="Mão">Mão</option>
                         <option value="Pé">Pé</option>
                         <option value="Mão e Pé">Mão e pé</option>
-                    </select>
+                    </select> 
+                    <div id="valor">
+                        <p></p>
+                    </div>
+                    
                 </div> 
-                
+                <button id="send">Enviar</button>   
             </div> 
-    
+            
             
         </div>
-        <button id="send">Enviar</button>  
-    </fieldset> 
+       
+
+        
+    </fieldset>  
+    <div class="box-msg">
+        <p id="msg"></p>
+    </div>
+   
     <script src="script.js"></script>
 </body>
 </html>
