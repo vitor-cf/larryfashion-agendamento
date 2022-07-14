@@ -31,12 +31,12 @@
                 </div>
                 <div class="box-telefone">
                     <label>Contato:</label>
-                    <input type="tel" placeholder="(XX) XXXXX-XXXX" id="tel">
+                    <input type="tel" placeholder="(XX) XXXXX-XXXX" id="tel" maxlength="11">
                 </div> 
                 <div class="box-func">
-                    <label>Funcionária(a):</label> 
+                    <label>Funcionária(o):</label> 
                     <select name="func" id="func" required>
-                        <option value="bruna" class="bruna">Bruna</option>
+                        <option value="Bruna" class="bruna">Bruna</option>
                 </div>
                 
                         
@@ -67,13 +67,32 @@
         
     </fieldset>   
 
-    <!-- Tabela de preços -->
-
-
+    <!-- mensagem  -->
     <div class="box-msg" id="d-msg">
         <p id="msg"></p> 
         <button id="close">Fechar</button>
     </div>
+
+    <!-- Tabela de preços --> 
+    <h1 class="text-tabela">Tabela de Preços</h1>
+    <div class="box-precos">
+        <div class="precos">
+            <p class="text-precos"> Mão </p>
+            <p class="text-precos"> ....... </p>
+            <p class="text-precos"> R$:20,00 </p>
+        </div> 
+        <div class="precos">
+            <p class="text-precos"> Pé </p>
+            <p class="text-precos"> ....... </p>
+            <p class="text-precos"> R$:20,00 </p>
+        </div>
+        <div class="precos">
+            <p class="text-precos"> Pé e Mão </p>
+            <p class="text-precos"> ....... </p>
+            <p class="text-precos"> R$:20,00 </p>
+        </div>
+    </div>
+
    
     <script src="script.js"></script>
 </body>

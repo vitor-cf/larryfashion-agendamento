@@ -17,8 +17,8 @@ function forms() {
         if (service === 'Mão') { 
                 
                 var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
-        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20${tel}%0A%0A %0A%0ATelefone:%20${func}%0A%0A------------------------ 
-        %0A%0AServiço:%20${service}%0A%0A------------------------ %0A%0A*Valor*: ${valor1}`,'_blank');
+        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
+        %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor1}`,'_blank');
         }  
                  
 
@@ -26,15 +26,15 @@ function forms() {
         if (service === 'Pé') {
                  
                 var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
-        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20${tel}%0A%0A------------------------ 
-        %0A%0AServiço:%20${service}%0A%0A------------------------ %0A%0A*Valor*: ${valor2}`,'_blank');
+        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
+        %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor2}`,'_blank');
         }  
 
         if (service === 'Mão e Pé') {
                 
                 var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
-        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20${tel}%0A%0A------------------------ 
-        %0A%0AServiço:%20${service}%0A%0A------------------------ %0A%0A*Valor*: ${valor3}`,'_blank');
+        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
+        %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor3}`,'_blank');
         } 
 
         if (service === 'Selecione') {
