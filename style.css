@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 .container-input {
-    width: 80%; 
+    width: 30%; 
     height: 50vh; 
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     display: flex;
@@ -100,6 +100,10 @@ button:hover {
     margin-left: 14vh; 
     border-radius: 5px; 
     box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+} 
+#service {
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
 .precos { 
     height: 4vh;
@@ -125,8 +129,8 @@ button:hover {
         
     } 
     .container-input {
-        
-        height: 40vh;
+        width: 90%;
+        height: 50vh;
     }
     input {
         margin-top: 10px; 
