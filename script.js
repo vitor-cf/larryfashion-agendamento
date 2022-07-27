@@ -14,34 +14,34 @@ function forms() {
         let valor3 = 'R$ 30,00';
         
 
-        if (service === 'Mão') { 
+         if (service === 'Mão' && nome !== "") { 
                 
-                var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
-        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
-        %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor1}`,'_blank');
-        }  
+                 var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
+         %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
+         %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor1}`,'_blank');
+         }  
                  
 
 
-        if (service === 'Pé') {
+         if (service === 'Pé' && nome !== "") {
                  
-                var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
-        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
-        %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor2}`,'_blank');
-        }  
+                 var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
+         %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
+         %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor2}`,'_blank');
+         }  
 
-        if (service === 'Mão e Pé') {
+         if (service === 'Mão e Pé' && nome !== "") {
                 
-                var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
-        %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
-        %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor3}`,'_blank');
-        } 
+                 var win = window.open(`https://wa.me/${numero}?text=%20%20%20*LarryFashion*%20%20%20 %0A%0A------------------------ 
+         %0A%0ACliente:%20${nome} %0A%0ATelefone:%20(${tel[0]}${tel[1]})%20${tel[2]}${tel[3]}${tel[4]}${tel[5]}${tel[6]}-${tel[7]}${tel[8]}${tel[9]}${tel[10]}%0A%0A ------------------------ 
+         %0A%0AServiço:%20${service}  %0A%0AFuncionária(o):%20${func}%0A%0A------------------------ %0A%0A*Valor*: ${valor3}`,'_blank');
+         } 
 
-        if (service === 'Selecione') {
-                document.getElementById('d-msg').style.display ='block';
-                msg.innerHTML = `Selecione um serviço !`; 
+         if (service === 'Selecione' || nome === "") {
+                 document.getElementById('d-msg').style.display ='block';
+                 msg.innerHTML = `Dados incorretos !`; 
                 
-        } 
+         } 
 
         
                 
@@ -49,14 +49,14 @@ function forms() {
         
 }  
 
-const feche = document.getElementById('d-msg');
-function buttonFechar() {
-        document.getElementById('d-msg').style.display = 'none';
-}
+ const feche = document.getElementById('d-msg');
+ function buttonFechar() {
+         document.getElementById('d-msg').style.display = 'none';
+ }
 
-feche.addEventListener('click', buttonFechar) 
+ feche.addEventListener('click', buttonFechar) 
 
-evento.addEventListener('click', forms);
+ evento.addEventListener('click', forms);
 
 
 

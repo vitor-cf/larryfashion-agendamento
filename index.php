@@ -1,3 +1,26 @@
+<?php 
+    if(isset($_POST['submit']))
+    {
+        // print_r('Nome:' . $_POST['nome']); 
+        // print_r('<br>');
+        // print_r('Telefone:' . $_POST['telefone']);
+        // print_r('<br>');
+        // print_r('Serviço:' . $_POST['service']);
+        // print_r('<br>');
+        // print_r('Funcionária(o):' . $_POST['func']);
+
+        include_once('config.php');
+
+        $nome = $_POST['nome'];
+        $telefone = $_POST['telefone'];
+        $funcionario = $_POST['func']; 
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,funcionario) VALUES ('$nome','$telefone','$funcionario')");
+        
+        
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,18 +44,18 @@
     </div> 
     
     <!-- Formulário Agendamento -->  
-    <form action="">
+    <form action="index.php" method="POST">
         <fieldset>
             <div class="border">
                 <div class="container-input"> 
                 
                     <div class="box-cliente">
                         <label>Cliente:</label>
-                        <input type="text" placeholder="Digite seu nome" id="nome" required autocomplete="off"> 
+                        <input type="text" placeholder="Digite seu nome" id="nome" required autocomplete="off" name="nome"> 
                     </div>
                     <div class="box-telefone">
                         <label>Contato:</label>
-                        <input type="tel" placeholder="(XX) XXXXX-XXXX" id="tel" maxlength="11" required autocomplete="off">
+                        <input type="tel" placeholder="(XX) XXXXX-XXXX" id="telefone" maxlength="11" required autocomplete="off" name="telefone">
                     </div> 
                     <div class="box-func">
                         <label>Funcionária(o):</label> 
@@ -44,14 +67,7 @@
                         </div>
                             
                         </select> 
-                    <!--  <div class="box-services">
-                        <label>Horário:</label> 
-                            <select name="service" id="service" required>
-                            <option value="Selecione" class="selec">Selecione</option>
-                            <option value="1">10:00</option>
-                            <option value="2">12:00</option>
-                            <option value="3">13:00</option>
-                        </select> -->
+                    
                         <label>Serviços:</label> 
                         <select name="service" id="service" required>
                             <option value="Selecione" class="selec">Selecione</option>
@@ -66,7 +82,7 @@
                         
                     </div> 
                     <div class="button">
-                        <button id="send">Enviar</button> 
+                        <input type="submit" id="submit" name="submit"></input> 
                     </div>
                       
                 </div> 
@@ -86,27 +102,9 @@
         <button id="close">Fechar</button>
     </div>
 
-    <!-- Tabela de preços  
-    <h1 class="text-tabela">Tabela de Preços</h1>
-    <div class="box-precos">
-        <div class="precos">
-            <p class="text-precos"> Mão: </p>
-           
-            <p class="text-precos"> R$ 20,00 </p>
-        </div> 
-        <div class="precos">
-            <p class="text-precos"> Pé: </p>
-            
-            <p class="text-precos"> R$ 25,00 </p>
-        </div>
-        <div class="precos">
-            <p class="text-precos"> Pé e Mão: </p>
-            
-            <p class="text-precos"> R$ 30,00 </p>
-        </div>
-    </div> -->
+    
 
    
-    <script src="script.js"></script>
+    <script src="#"></script>
 </body>
 </html>
